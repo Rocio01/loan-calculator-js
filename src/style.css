@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1, .fa-2x {
+  color: #007bff;
+}
+
+body {
+  background-color: rgb(234, 243, 243);
+}
+span {
+  width: 65px;
+}

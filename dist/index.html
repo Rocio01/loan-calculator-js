@@ -4,9 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>LOAN CALCULATOR</title>
 </head>
 <body>
+  <div class="col-md-6 mx-auto">
+    <h1 class="text-center">Loan Calculator</h1>
+    
+    <form class="loan-form">
+      <div class="input-group margin-bottom-sm">
+        <span class="input-group-text"><i class="fas fa-money-bill-alt fa-2x"></i></span>
+        <input class="form-control text-center" type="number" id="amount" placeholder=" Loan Amount">
+      </div>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fas fa-percentage fa-2x"></i> </span>
+        <input class="form-control text-center" type="number" id="interest" placeholder="Interest">
+      </div>
+      <div class="input-group">
+        <input type="number" id="years" class="form-control text-center" placeholder="Years to repay">
+      </div>
+      <div class="">        
+        <input type="submit" value="Calculate" class="btn btn-primary btn-lg col-12">
+      </div>
+    </form>
+
+  </div>
+  
   <script src="./main.js"></script>
 </body>
 </html>
