@@ -18,7 +18,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://rocio01.github.io/my-tasks-app/)
+[Live Demo Link](https://rocio01.github.io/loan-calculator-js/)
 
 ## Getting Started
 
