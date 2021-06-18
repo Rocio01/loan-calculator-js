@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-h1, .fa-2x {
+h1, .fa-2x, h3 {
   color: #007bff;
 }
 
@@ -12,4 +12,11 @@ body {
 }
 span {
   width: 65px;
+}
+
+.span-results {
+  width: 150px;
+}
+.input-color {
+  background-color: aliceblue !important;
 }
