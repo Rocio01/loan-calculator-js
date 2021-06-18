@@ -14,9 +14,12 @@ const monthlyPayment = document.getElementById("monthly-payment");
 const totalPayment = document.getElementById("total-payment");
 const totalinterest = document.getElementById("total-interest");
 const principalContainer = document.querySelector(".principal-container");
+const spinner = document.querySelector(".spinner");
+const result = document.querySelector(".results-container");
 
 
 const error = () =>{
+  spinner.style.display = "none"; 
   const errorDiv =  document.createElement("div");
   errorDiv.className = "alert alert-danger";
   const p = document.createElement("p");
@@ -28,10 +31,7 @@ const error = () =>{
   }, 2000)
 }
 
-
-
-loanForm.addEventListener("submit", (e)=> {
-  e.preventDefault();
+const calculation = () => {
   const amoutValue = amount.value;
   const interestCalculation = parseFloat(interest.value)/100/12;
   const paymentsCalculation = (parseFloat(years.value))* 12;
@@ -43,9 +43,22 @@ loanForm.addEventListener("submit", (e)=> {
     monthlyPayment.value = month.toFixed(2);
     totalPayment.value = (month * paymentsCalculation).toFixed(2);
     totalinterest.value = ((month * paymentsCalculation) - amoutValue).toFixed(2);
+    spinner.style.display = "none";
+    result.style.display = "block";
   } else {
     error();    
   }
+}
+
+
+loanForm.addEventListener("submit", (e)=> {
+  e.preventDefault();
+  
+  result.style.display = "none";
+  spinner.style.display = "block"; 
+  setTimeout(calculation, 2000);
+  
+  
 
 })
 
