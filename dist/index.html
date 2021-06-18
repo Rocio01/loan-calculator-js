@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOAN CALCULATOR</title>
+</head>
+<body >
+  <div class="col-md-6 mx-auto mt-5 principal-container">
+    <h1 class="text-center">Loan Calculator</h1>
+    
+    <form class=" container p-3" id="loan-form">
+      <div class="input-group margin-bottom-sm">
+        <span class="input-group-text"><i class="fas fa-money-bill-alt fa-2x"></i></span>
+        <input class="form-control text-center" type="number" id="amount" placeholder=" Loan Amount">
+      </div>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fas fa-percentage fa-2x"></i> </span>
+        <input class="form-control text-center" type="number" id="interest" placeholder="Interest">
+      </div>
+      <div class="input-group">
+        <input type="number" id="years" class="form-control text-center" placeholder="Years to repay">
+      </div>
+      <div class="">        
+        <input type="submit" class="btn btn-primary btn-lg col-12" value="Calculate"></input>
+      </div>
+    </form>
+
+    <div class="spinner text-center">
+      <i class="fas fa-cog fa-spin fa-4x"></i>
+    </div>
+ 
+  <div class="results-container mt-5 p-3">
+        <h3 class="text-center">Results</h3>
+      <div class="input-group margin-bottom-sm">
+        <span class="input-group-text span-results">Monthly Payment</span>
+        <input class="form-control input-color text-center" type="number" id="monthly-payment" disabled>
+      </div>
+      <div class="input-group">
+        <span class="input-group-text span-results">Total Payment</span>
+        <input class="form-control text-center input-color" type="number" id="total-payment" disabled>
+      </div>
+      <div class="input-group">
+        <span class="input-group-text span-results">Total Interest</span>
+        <input type="number" id="total-interest" class="form-control text-center input-color" disabled>
+      </div>
+
+      </div>
+  
+  </div>
+  
+  <script src="./main.js"></script>
+</body>
+</html>
